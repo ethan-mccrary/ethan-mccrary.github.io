@@ -9,11 +9,11 @@ public class DatabaseConnect {
         try {
             // Find driver
             Class.forName("com.mysql.cj.jdbc.Driver");
-            String dbName = "emccrary_data";
-            String userName = "emccrary";
-            String password = "Moonghostdragon1*";
-            String hostname = "emccrary-data.c1ptjdxybasa.us-east-2.rds.amazonaws.com";
-            String port = "3306";
+            String dbName = "";
+            String userName = "";
+            String password = "";
+            String hostname = "";
+            String port = "";
             String jdbcUrl = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName + "?user=" + userName +
                     "&password=" + password;
 
