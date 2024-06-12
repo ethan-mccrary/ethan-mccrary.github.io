@@ -1,4 +1,3 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -12,8 +11,26 @@
 
 <!-- Page wrapper -->
 <div id="page-wrapper">
+    <!-- Header -->
+    <header id="header">
+        <span class="logo"><a href="index.html">Emccrary.com</a></span>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
 
-    <jsp:include page="header.jsp"/>
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resumé</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a class="close"><span>Close</span></a>
+        </div>
+    </nav>
 
     <!-- Main -->
     <section id="main" class="wrapper style2">
@@ -22,11 +39,11 @@
                 <h1>My Work</h1>
                 <p>I have completed various projects and update this page regularly as projects are finished. Some
                     projects are hosted here, while others are hosted on my <a
-                            href="https://github.com/Ty-Haruki?tab=repositories">GitHub account</a>.</p>
+                            href="https://github.com/ethan-mccrary?tab=repositories">GitHub account</a>.</p>
             </header>
 
-            <!-- Search -->
-            <form method="post" action="${pageContext.request.contextPath}/Search.jsp">
+            <!-- Search
+            <form method="post" action="${pageContext.request.contextPath}/Search.html">
                 <div class="row gtr-uniform">
                     <div class="col-10 col-12-small">
                         <input type="text" name="project_query" id="project_query" placeholder="Project Name"/>
@@ -38,7 +55,7 @@
                 <div class="row gtr-uniform">
                     <p>${queryResult}</p>
                 </div>
-            </form>
+            </form> -->
 
             <ul class="tabs" id="content">
                 <li>
@@ -127,7 +144,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="word_cloud.jsp" class="button next">Visit</a></li>
+                            <li><a href="word_cloud.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="gnuplot-with-c++">
@@ -139,7 +156,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="gnuplot.jsp" class="button next">Visit</a></li>
+                            <li><a href="gnuplot.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="svg-shape-generator-in-c++">
@@ -188,15 +205,10 @@
 
                         <blockquote>
                             As a small side project, I developed a website named DevDiscussion.org. It was meant to
-                            be a forum where developers could congregate and converse about problems or questions.
-                            The site is still under construction, but many features that I wanted to test with are
-                            implemented. The website features user accounts/profiles, creating/deleting posts,
+                            be a forum where developers could congregate and converse about problems or questions, similar to stackoverflow.com.
+                            The site is no longer functioning, but the website featured user accounts/profiles, creating/deleting posts,
                             commenting, and more. I utilized PHP and SQL to manage backend features, while I designed the layout with HTML, Materialize CSS, and JavaScript/JQuery.
                         </blockquote>
-
-                        <ul class="actions">
-                            <li><a href="https://devdiscussion.org" class="button next">Visit</a></li>
-                        </ul>
                     </div>
                     <div class="box" id="analysis-of-mydoom.a">
                         <h4>Analysis of MyDoom.A</h4>
@@ -213,7 +225,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="mydoom_a.jsp" class="button next">Visit</a></li>
+                            <li><a href="mydoom_a.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="micro-benchmarking-algorithmic-sorting">
@@ -227,7 +239,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="algorithmic_sorting.jsp" class="button next">Visit</a></li>
+                            <li><a href="algorithmic_sorting.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                 </li>
@@ -322,7 +334,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="word_cloud.jsp" class="button next">Visit</a></li>
+                            <li><a href="word_cloud.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="gnuplot-with-c++-c++">
@@ -334,7 +346,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="gnuplot.jsp" class="button next">Visit</a></li>
+                            <li><a href="gnuplot.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="svg-shape-generator-in-c++-c++">
@@ -392,15 +404,10 @@
 
                         <blockquote>
                             As a small side project, I developed a website named DevDiscussion.org. It was meant to
-                            be a forum where developers could congregate and converse about problems or questions.
-                            The site is still under construction, but many features that I wanted to test with are
-                            implemented. The website features user accounts/profiles, creating/deleting posts,
+                            be a forum where developers could congregate and converse about problems or questions, similar to stackoverflow.com.
+                            The site is no longer functioning, but the website featured user accounts/profiles, creating/deleting posts,
                             commenting, and more. I utilized PHP and SQL to manage backend features, while I designed the layout with HTML, Materialize CSS, and JavaScript/JQuery.
                         </blockquote>
-
-                        <ul class="actions">
-                            <li><a href="https://devdiscussion.org" class="button next">Visit</a></li>
-                        </ul>
                     </div>
                 </li>
                 <li>
@@ -421,7 +428,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="mydoom_a.jsp" class="button next">Visit</a></li>
+                            <li><a href="mydoom_a.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                     <div class="box" id="micro-benchmarking-algorithmic-sorting-misc">
@@ -435,7 +442,7 @@
                         </blockquote>
 
                         <ul class="actions">
-                            <li><a href="algorithmic_sorting.jsp" class="button next">Visit</a></li>
+                            <li><a href="algorithmic_sorting.html" class="button next">Visit</a></li>
                         </ul>
                     </div>
                 </li>
@@ -443,11 +450,36 @@
         </div>
     </section>
 
-    <jsp:include page="footer.jsp"/>
+    <!-- Copyright -->
+    <section class="wrapper copyright">
+        <div class="inner">
+            &copy; 2021 <a href="index.html">Emccrary.com</a>. All rights reserved.
+        </div>
+    </section>
 
 </div>
 
-<jsp:include page="scripts.jsp"/>
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.selectorr.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#project_query").autocomplete({
+            source: "OnSearch",
+            minLength: 1,
+            dataType: "json",
+        })
+    });
+</script>
 
 </body>
 </html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>MyDoom.A</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body class="is-preload">
+
+<!-- Page wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <span class="logo"><a href="index.html">Emccrary.com</a></span>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resumé</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a class="close"><span>Close</span></a>
+        </div>
+    </nav>
+
+
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="inner">
+            <header class="major special">
+                <h1>Analysis of MyDoom.A</h1>
+                <p>Discussed in this paper are several types of analysis done with MyDoom.A. The analysis consisted of
+                    three parts: static, dynamic, and code analysis. For static analysis, a live copy of the MyDoom.A
+                    virus was taken. From there, hash values were checked and the executable was analyzed using hex
+                    editors. In dynamic analysis, MyDoom.A was ran in a virtual environment. From this, accessed files
+                    and generated processes were observed. For code analysis, the source code of myDoom.A was analyzed
+                    and several key functions used to initiate MyDoom.A's attacks were recorded. This project is a
+                    demonstration of the skills and techniques that were acquired in studying malware analysis.</p>
+            </header>
+            <object data="doc/MyDoom.A-Analysis.pdf" type="application/pdf"
+                    style="min-height:100vh;width:100%"></object>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="wrapper copyright">
+        <div class="inner">
+            &copy; 2021 <a href="index.html">Emccrary.com</a>. All rights reserved.
+        </div>
+    </section>
+
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.selectorr.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#project_query").autocomplete({
+            source: "OnSearch",
+            minLength: 1,
+            dataType: "json",
+        })
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Gnuplot</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body class="is-preload">
+
+<!-- Page wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <span class="logo"><a href="index.html">Emccrary.com</a></span>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resumé</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a class="close"><span>Close</span></a>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="inner">
+            <header class="major special">
+                <h1>Gnuplot with C++</h1>
+                <p>This program allows the user to input values that define several different curve stitchings. The user
+                    can choose to draw an Epicycloid, Hypotrochoid, Butterfly Curve, and more.</p>
+            </header>
+            <div class="gallery">
+                <a class="image"><img src="images/gnu/butterfly.png"></a>
+                <a class="image"><img src="images/gnu/circle.png"></a>
+                <a class="image"><img src="images/gnu/epicycloid.png"></a>
+                <a class="image"><img src="images/gnu/hypocycloid.png"></a>
+                <a class="image"><img src="images/gnu/hypotrochoid.png"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="wrapper copyright">
+        <div class="inner">
+            &copy; 2021 <a href="index.html">Emccrary.com</a>. All rights reserved.
+        </div>
+    </section>
+
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.selectorr.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#project_query").autocomplete({
+            source: "OnSearch",
+            minLength: 1,
+            dataType: "json",
+        })
+    });
+</script>
+
+</body>
+</html>

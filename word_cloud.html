@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Word Clouds</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body class="is-preload">
+
+<!-- Page wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <span class="logo"><a href="index.html">Emccrary.com</a></span>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resumé</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <a class="close"><span>Close</span></a>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="inner">
+            <header class="major special">
+                <h1>Text-Based Word-Cloud Generator</h1>
+                <p>The user has the option to sort the word cloud alphabetically or by the number of times a word
+                    appears throughout the text. Once the user has gone through the proper motions, any .txt file can be
+                    used to generate an HTML file containing every word (unless the user chose to filter stopwords) in
+                    the file ordered by their preference.</p>
+            </header>
+            <a class="image fit"><img src="images/word_cloud.png"></a>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="wrapper copyright">
+        <div class="inner">
+            &copy; 2021 <a href="index.html">Emccrary.com</a>. All rights reserved.
+        </div>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.selectorr.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#project_query").autocomplete({
+            source: "OnSearch",
+            minLength: 1,
+            dataType: "json",
+        })
+    });
+</script>
+
+</body>
+</html>
