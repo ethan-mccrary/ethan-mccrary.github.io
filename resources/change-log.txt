@@ -1,0 +1,11 @@
+Change Log
+============
+emccrary.com-v.8.24.21.2
+- Migrated images to S3 bucket, connected to Java Web App with AWS SDK
+emccrary.com-v.8.24.21.3
+- Deleted bloated AWS SDK libraries and extra WAR file
+- Decreased file size by ~180MB
+emccrary.com-v.8.24.21.4
+- Fixed issue with access to S3 bucket for images.
+emccrary.com-v.8.24.21.5
+- Fixed issue where images are not loading in EB environment and fixed format of images.
