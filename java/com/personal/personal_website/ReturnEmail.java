@@ -13,9 +13,9 @@ public class ReturnEmail {
     Session mailSession;
     MimeMessage emailMessage;
     String emailHost = "smtp.gmail.com";
-    String emailPort = "587";// gmail's smtp port
-    String fromUser = "ethanjusino@gmail.com";// your gmail id
-    String fromUserEmailPassword = "Moonghostdragon1*";
+    String emailPort = "";// gmail's smtp port
+    String fromUser = "";// your gmail id
+    String fromUserEmailPassword = "";
 
     public void setMailServerProperties() {
         emailProperties = System.getProperties();
