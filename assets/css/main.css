@@ -4704,13 +4704,22 @@ input, select, textarea {
 
 /* DARK MODE SETTINGS */
 
-#header.dark, #contact.dark > *:not(.wrapper), #footer.dark {
+#header.dark, #contact.dark > *:not(.wrapper), #footer.dark, #main.dark > *:not(.wrapper), #work1.dark, #work2.dark > *:not(.wrapper) {
     filter: invert(1);
 }
 
 #menu.dark {
 	background-color: rgba(58, 58, 58, 0.9);
 }
+
+.wrapper.dark {
+	background: #fff;
+}
+
+	.wrapper.dark:before, .wrapper.dark:after {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%23ffffff%3B' /%3E%3C/svg%3E");
+		z-index: 2;
+	}
 
 .wrapper.style2.dark {
 	background: #141414;
