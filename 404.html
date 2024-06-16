@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>404</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="assets/css/main.css"/>
+</head>
+<body class="is-preload">
+
+<!-- Page wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <span class="logo"><a href="index">Emccrary.com</a></span>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label" id="checkbox-label">
+            <i class="fas fa-moon" id="moon"></i>
+            <i class="fas fa-sun" id="sun"></i>
+            <span class="ball" id="ball"></span>
+        </label>
+        <a href="#menu"><span>Menu</span></a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+                <li><a href="index">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="resume">Resumé</a></li>
+                <li><a href="projects">Projects</a></li>
+            </ul>
+            <a class="close"><span>Close</span></a>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <section id="main" class="wrapper style2">
+        <div class="inner">
+            <header class="major special">
+                <h1>404 Not Found</h1>
+                <p>The page you are trying to access was not found or may not exist. You can return to the homepage by clicking <a href="index">here</a>.</p>
+            </header>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section class="wrapper copyright" id="footer">
+        <div class="inner">
+            &copy; 2024 <a href="index">Emccrary.com</a>. All rights reserved.
+        </div>
+    </section>
+
+</div>
+<!-- Scripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.selectorr.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery-modal.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#project_query").autocomplete({
+            source: "OnSearch",
+            minLength: 1,
+            dataType: "json",
+        })
+    });
+
+    const checkbox = document.getElementById("checkbox")
+    checkbox.addEventListener("change", () => {
+        document.getElementById("header").classList.toggle("dark")
+        document.getElementById("main").classList.toggle("dark")
+        document.getElementById("menu").classList.toggle("dark")
+        document.getElementById("footer").classList.toggle("dark")
+        let isDark = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', isDark ? 'enabled' : 'disabled');
+    })
+
+    function toggleDarkMode() {
+        document.getElementById("header").classList.toggle("dark")
+        document.getElementById("main").classList.toggle("dark")
+        document.getElementById("menu").classList.toggle("dark")
+        document.getElementById("footer").classList.toggle("dark")
+    }
+
+    // On page load
+    document.addEventListener('DOMContentLoaded', (event) => {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        toggleDarkMode()
+      }
+    });
+</script>
+
+</body>
+</html>
