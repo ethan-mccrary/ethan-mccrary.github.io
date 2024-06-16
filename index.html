@@ -5,15 +5,6 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
-    <script>
-    // On page load
-    document.addEventListener('DOMContentLoaded', (event) => {
-      if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        toggleDarkMode()
-      }
-    });
-    </script>
 </head>
 <body class="is-preload">
 
@@ -162,6 +153,14 @@
         document.getElementById("contact").classList.toggle("dark")
         document.getElementById("footer").classList.toggle("dark")
     }
+
+    // On page load
+    document.addEventListener('DOMContentLoaded', (event) => {
+      if (localStorage.getItem('darkMode') === 'enabled') {
+        document.body.classList.add('dark-mode');
+        toggleDarkMode()
+      }
+    });
 </script>
 
 </body>
