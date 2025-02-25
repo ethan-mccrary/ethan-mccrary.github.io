@@ -2707,7 +2707,7 @@ input, select, textarea {
 			-ms-user-select: none;
 			user-select: none;
 			list-style: none;
-			margin: 0 0 2rem 0;
+			margin: 0 0 0 0;
 			padding: 0;
 		}
 
@@ -3311,15 +3311,13 @@ input, select, textarea {
 	}
 
 	.gallery {
-		column-gap: 2rem;
-		columns: 3;
 		margin: 0 0 2rem 0;
 		width: 100%;
 	}
 
 		.gallery a, .gallery span {
 			display: block;
-			margin: 0 0 2rem 0;
+			margin: 0 0 0 0;
 		}
 
 			.gallery a img, .gallery span img {
@@ -3330,7 +3328,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.gallery {
-				columns: 2;
+				columns: 1;
 			}
 
 		}
@@ -4729,3 +4727,71 @@ input, select, textarea {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,0 0,100 100,100' style='fill:%23141414%3B' /%3E%3C/svg%3E");
 		z-index: 2;
 	}
+
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	list-style: none;
+	list-style-type: none;
+	text-decoration: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+.container {
+	width: 100%;
+	padding: 4rem 1rem;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 1rem;
+    place-content: center;
+}
+
+.card {
+    color: black;
+    border-radius: 2px;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+
+    &-image {
+      position: relative;
+      display: block;
+      width: 100%;
+      padding-top: 70%;
+      background: $color-white;
+
+      img {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+a > img.dark, div.inner > img {
+	filter: invert(1) !important;
+}
+
+a > img, div.inner > img.dark {
+	filter: invert(0) !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    .container {
+      display: grid;
+      grid-template-columns: 3, 1fr;
+      grid-gap: 1rem;
+      place-content: center;
+    }
+  }
+}
