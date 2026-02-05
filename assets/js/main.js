@@ -60,7 +60,7 @@
 
 					// Images (in the format of 'url': 'alignment').
 						images: {
-							'images/slides/slide00.png': '0% 35%',
+							'images/slides/slide00.png': 'center',
 							'images/slides/slide01.jpg': 'center',
 							'images/slides/slide02.jpg': 'center',
 							'images/slides/slide03.jpg': 'center',
